@@ -1,0 +1,129 @@
+<html style="background-color:Lightblue;">
+<br><br/>
+
+<title>
+  Labradors - 45585342
+</title>
+
+<header>
+  <center> <h1> We ♥ Dogs! </h1> </center>
+
+  <script language="JavaScript">
+<!-- Hide from old browsers
+
+
+var i = 1
+images = new Array
+images[1] = "labimage1.jpg" <!-- https://www.akc.org/dog-breeds/labrador-retriever/-->
+images[2] = "labimage2.jpg" <!--https://www.pinterest.com/pin/2603712268946348/-->
+images[3] = "labimage3.jpg" <!-- https://www.news.com.au/lifestyle/home/pets/a-dogs-colour-could-impact-how-long-they-live-and-their-chances-of-developing-serious-illnesses/news-story/26610a924183118bf748e3df4b1b69ec-->
+images[4] = "labimage4.jpg" <!--https://www.australiandoglover.com/2015/09/labrador-retriever.html-->
+images[5] = "labimage5.jpg"<!-- https://www.pinterest.com/pin/119556565078663042/ -->
+images[6] = "labimage6.jpg"<!-- https://squeaksandnibbles.com/golden-retriever-vs-labrador/ -->
+
+function gallery(){
+if (i == 1){
+document.gallery.previous.value="Previous"}
+}
+function previmg(){
+if (i != 1) {
+i --
+document.img.src = images[i]
+document.gallery.next.value = "Next"}
+if (i == 1) {
+document.gallery.previous.value="        "}
+
+}
+
+function nextimg(){
+if (i != 6) {
+i ++
+document.gallery.previous.value="Previous"
+image = images[i]
+document.img.src = image}
+if (i == 6){
+document.gallery.next.value="    ";}
+}
+
+function pickrand(){
+var imagenumber = 6 ;
+var randomnumber = Math.random() ;
+var rand1 = Math.round( (imagenumber-1) * randomnumber) + 1;
+var randimage = images[rand1]
+document.img.src = randimage
+i = rand1
+if (i == 1){
+document.gallery.previous.value="        ";}
+else {
+document.gallery.previous.value="Previous";}
+if (i == 6){
+document.gallery.next.value="    ";}
+else {
+document.gallery.next.value="Next";}
+}
+
+function firstimg(){
+i = 1
+document.img.src = images[i];
+document.gallery.previous.value="        ";
+document.gallery.next.value="Next"
+}
+function lastimg(){
+i = 6
+document.img.src = images[i];
+document.gallery.next.value="    "
+document.gallery.previous.value="Previous"
+}
+
+</script>
+
+</header>
+<link href="Stylesheet.css" rel="stylesheet" type="text/css">
+
+
+<center>
+  <h3>
+  <div class="topnav">
+    <div class="topnav">
+    <a href="Index.html">Home</a>
+    <a href="mypage1.html">Pugs</a>
+    <a class="active" href="mypage2.html">Labradors</a>
+</div>
+</h3>
+</center>
+<center>
+<h2> Labradors - Canis familiaris </h2>
+
+<h5> Origin </h5>
+
+<h4> The breed originated not in Labrador, but on the coast of Newfoundland in the 17th century.
+  <br> They were trained to bring in the fishing-nets through the icy waters for the fishermen and, in the early 19th century, were brought to Poole Harbour in Great Britain.
+  <br>These dogs were short-limbed, sturdy swimmers with short dense coats and an otter-like tail. They were so attractive that the fishermen had umpteen offers from Englishmen to buy them.
+  <br>The breed was instantly successful as a gundog. The Earl of Malmesbury was fascinated by these dogs, known at that time as Saint John's breed of water dogs and he started breeding them, calling them Labrador dogs.
+  <br>A heavy dog tax in Canada and the new quarantine laws in Great Britain caused a great reduction in the breed, limiting further breeding to be done without any more imports.
+  <br>Thankfully the ones already in Britain were of excellent quality and in the hands of serious breeders.
+  <br>The Kennel Club of Great Britain first recognised the breed in 1903. </br> </br> </br> </br> </br> </br>
+</h4>
+
+<h5> Personality Traits </h5>
+<h4> This breed is definitely in the top three when it comes to choosing a family pet! They are friendly, good-natured dogs who are affectionate with everyone.
+  <br> They are adaptable dogs and are naturally social animals. They bond well with children, being patient and forgiving. Other household animals are not at risk.
+   <br>They are extremely loyal and love to be included in all aspects of family life. They will bark to draw your attention to strangers but will welcome them with open arms. </br> </br>
+<h5> Labradors gallery </h5>
+<body onLoad="gallery();">
+<IMG SRC="labimage1.jpg" name="img" border=10>
+<form name="gallery">
+<input type=button value="Previous" name="previous" onClick="previmg();">
+<input type=button value="First" name="first" onClick="firstimg();">
+<input type=button value="Random" name="random" onClick="pickrand();">
+<input type=button value="Last" name="last" onClick="lastimg();">
+<input type=button value="Next" name="next" onClick="nextimg();">
+</form>
+
+<br> </br>
+<br> </br>
+<br> </br>
+</center>
+
+
+</html>

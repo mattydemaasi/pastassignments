@@ -1,0 +1,135 @@
+<html style="background-color:Lightblue;">
+<br><br/>
+
+<title>
+  Pugs - 45585342
+</title>
+
+<header>
+  <center> <h1> We ♥ Dogs! </h1> </center>
+
+  <script language="JavaScript">
+<!-- Hide from old browsers
+
+
+var i = 1
+images = new Array
+images[1] = "pugimage1.jpg" <!-- https://www.purina.com.au/dogs/breeds/pugs#.XXBl6S17HmE -->
+images[2] = "pugimage2.jpg" <!--https://en.wikipedia.org/wiki/Pug-->
+images[3] = "pugimage3.jpg" <!-- https://www.news.com.au/lifestyle/home/pets/british-veterinary-association-is-urging-prospective-dog-owners-to-avoid-buying-pugs-and-bulldogs/news-story/70fe3e9de1a20a1fb58e23603655a030 -->
+images[4] = "pugimage4.jpg" <!-- https://www.vetvoice.com.au/media-releases/vets-express-concern-for-the-welfare-of-pugs-at-taste-of-braddon-event/ -->
+images[5] = "pugimage5.jpg"<!-- http://www.animalplanet.com/breed-selector/dog-breeds/toy/pug.html -->
+images[6] = "pugimage6.jpg"<!-- https://dogtime.com/dog-breeds/pug -->
+
+function gallery(){
+if (i == 1){
+document.gallery.previous.value="Previous"}
+}
+function previmg(){
+if (i != 1) {
+i --
+document.img.src = images[i]
+document.gallery.next.value = "Next"}
+if (i == 1) {
+document.gallery.previous.value="        "}
+
+}
+
+function nextimg(){
+if (i != 6) {
+i ++
+document.gallery.previous.value="Previous"
+image = images[i]
+document.img.src = image}
+if (i == 6){
+document.gallery.next.value="    ";}
+}
+
+function pickrand(){
+var imagenumber = 6 ;
+var randomnumber = Math.random() ;
+var rand1 = Math.round( (imagenumber-1) * randomnumber) + 1;
+var randimage = images[rand1]
+document.img.src = randimage
+i = rand1
+if (i == 1){
+document.gallery.previous.value="        ";}
+else {
+document.gallery.previous.value="Previous";}
+if (i == 6){
+document.gallery.next.value="    ";}
+else {
+document.gallery.next.value="Next";}
+}
+
+function firstimg(){
+i = 1
+document.img.src = images[i];
+document.gallery.previous.value="        ";
+document.gallery.next.value="Next"
+}
+function lastimg(){
+i = 6
+document.img.src = images[i];
+document.gallery.next.value="    "
+document.gallery.previous.value="Previous"
+}
+
+</script>
+
+</header>
+<link href="Stylesheet.css" rel="stylesheet" type="text/css">
+
+
+<center>
+  <h3>
+  <div class="topnav">
+    <div class="topnav">
+    <a href="Index.html">Home</a>
+    <a class="active" href="mypage1.html">Pugs</a>
+    <a href="mypage2.html">Labradors</a>
+</div>
+</h3>
+</center>
+
+
+<center>
+<h2> Pugs - Canis lupus familiaris </h2>
+
+<h5> Origin </h5>
+
+<h4> Originally bred in China, over a thousand years ago, the Pug was brought to Europe by the Dutch East India Company.
+  <br> In Europe they became the dog of aristocrats and royalty holding high status amongst dog breeds.
+  <br>The pug became the official dog of the House of Orange, Holland, as recognition for saving the life of William, Prince of Orange, in 1572.
+  <br>The Pug was also reportedly a favourite in France during Napoleonic times.
+  <br>Napoleon's wife Josephine apparently had great affection for the breed and it is alleged her dog, Fortune, bit Napoleon as he climbed into bed on the couple's wedding night.
+  <br>Pugs are one of the earliest pure breeds of dog kept in Australia.
+  <br>Although it is uncertain as to when they arrived in this country, there are records from the Agricultural Society of NSW listing two pugs exhibited in 1870.</br> </br> </br> </br> </br> </br>
+</h4>
+
+<h5> Personality Traits </h5>
+<h4> The Pug is keen, with a happy-go-lucky attitude. Animated, peppy and spirited, they are loyal, loving and affectionate with their families.
+  <br> Playful, lively and rambunctious, they are sure to keep you laughing.
+   <br>Pugs get along well with other dogs and pets, and they behave impeccably with both children and visitors.
+    <br> It is relatively inactive indoors and will do okay without a yard.
+     <br> Cannot withstand hot or cold weather and should be kept indoors at a comfortable temperature. </br></br> </br> </br>
+
+<h5> Pug gallery </h5>
+<body onLoad="gallery();">
+<IMG SRC="pugimage1.jpg" name="img" border=10>
+<form name="gallery">
+<input type=button value="Previous" name="previous" onClick="previmg();">
+<input type=button value="First" name="first" onClick="firstimg();">
+<input type=button value="Random" name="random" onClick="pickrand();">
+<input type=button value="Last" name="last" onClick="lastimg();">
+<input type=button value="Next" name="next" onClick="nextimg();">
+</form>
+
+</center>
+
+<br> </br>
+<br> </br>
+<br> </br>
+
+
+</html>

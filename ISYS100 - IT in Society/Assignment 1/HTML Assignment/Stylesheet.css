@@ -1,0 +1,90 @@
+.topnav {
+  background-color: blue;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: center;
+  color: white;
+  text-align: center;
+  padding: 200px 200px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  background-color: Lightblue;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: lightgreen;
+  color: black;
+}
+
+h1{
+font-family: monospace;
+font-size:60;
+color: white;
+background-color: grey;
+padding: 10;
+font-weight: bold;
+
+
+}
+
+
+h2{
+font-family:cursive;
+font-size: 28;
+font-style: italic;
+color: darkblue;
+
+
+
+}
+
+h3{
+font-family:  sans-serif;
+font-style: italic;
+font-size: 20;
+font-weight: bold;
+
+
+
+}
+
+h4{
+font-family: sans-serif;
+font-size: 16;
+font-style: oblique;
+font-weight: lighter;
+
+
+
+}
+
+h5{
+font-family: cursive;
+font-size: 24;
+font-style: italic;
+color: darkblue;
+
+
+}
+
+h6{
+
+
+
+
+}
+
+tr{
+  background-color: #66FF66;
+}
+
+td{
+  color: 'black';
+
+}
